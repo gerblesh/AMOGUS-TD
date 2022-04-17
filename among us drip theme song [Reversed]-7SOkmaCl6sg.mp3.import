@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/among us drip theme song [Reversed]-7SOkmaCl6sg.mp3-cdf103c066cf2ef24b94f03f24c80dcc.mp3str"
+
+[deps]
+
+source_file="res://among us drip theme song [Reversed]-7SOkmaCl6sg.mp3"
+dest_files=[ "res://.import/among us drip theme song [Reversed]-7SOkmaCl6sg.mp3-cdf103c066cf2ef24b94f03f24c80dcc.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

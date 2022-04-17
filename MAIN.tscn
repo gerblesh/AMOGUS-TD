@@ -1,8 +1,20 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Amongoose.png" type="Texture" id=1]
+[ext_resource path="res://Levels/Amongoose.png" type="Texture" id=1]
 [ext_resource path="res://Towers/Obama/Obama(hot).png" type="Texture" id=2]
-[ext_resource path="res://Towers/Obama/sussy baka.png" type="Texture" id=3]
+[ext_resource path="res://Towers/Basic Sus/sussy baka.png" type="Texture" id=3]
+[ext_resource path="res://Enemies/Amogus(not sexy).png" type="Texture" id=4]
+[ext_resource path="res://among us drip theme song [Reversed]-7SOkmaCl6sg.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Towers/Basic Sus/sus_projectile.png" type="Texture" id=6]
+
+[sub_resource type="ParticlesMaterial" id=4]
+flag_disable_z = true
+direction = Vector3( 0, 1, 0 )
+spread = 0.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 100.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
 
 [sub_resource type="Curve2D" id=1]
 _data = {
@@ -52,6 +64,18 @@ current = true
 position = Vector2( 333, -285 )
 texture = ExtResource( 2 )
 
+[node name="SussyBaka(epic)" type="Sprite" parent="."]
+position = Vector2( -799, -390 )
+rotation = -0.02973
+texture = ExtResource( 3 )
+
+[node name="Particles2D" type="Particles2D" parent="SussyBaka(epic)"]
+show_behind_parent = true
+amount = 2
+lifetime = 4.0
+process_material = SubResource( 4 )
+texture = ExtResource( 6 )
+
 [node name="Enemy Path" type="Path2D" parent="."]
 curve = SubResource( 1 )
 
@@ -64,6 +88,10 @@ autoplay = "Move"
 anims/Move = SubResource( 2 )
 anims/RESET = SubResource( 3 )
 
-[node name="SussyBaka(Bad Boi)" type="Sprite" parent="Enemy Path/Angery Man"]
-scale = Vector2( 0.6, 0.2 )
-texture = ExtResource( 3 )
+[node name="Amogus(notSexy)" type="Sprite" parent="Enemy Path/Angery Man"]
+rotation = 0.02973
+scale = Vector2( 0.1, 0.025 )
+texture = ExtResource( 4 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )

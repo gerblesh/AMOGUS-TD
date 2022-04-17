@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sussy baka.png-4ad64ce00c61edb932bb6fbd12e14b81.stex"
+path="res://.import/sus_projectile.png-a3559c16ac5005ea96593342b5aba461.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Towers/Obama/sussy baka.png"
-dest_files=[ "res://.import/sussy baka.png-4ad64ce00c61edb932bb6fbd12e14b81.stex" ]
+source_file="res://Towers/Basic Sus/sus_projectile.png"
+dest_files=[ "res://.import/sus_projectile.png-a3559c16ac5005ea96593342b5aba461.stex" ]
 
 [params]
 
